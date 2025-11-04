@@ -391,22 +391,24 @@ header {
 }
 
 .about-image {
-  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;            /* prevent stretching */
+  max-width: 400px;          /* control the container width */
+  margin: 0 auto;            /* center horizontally */
 }
 
 .about-image img {
-  .about-image img {
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  object-fit: cover;
+  object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
+
 
 }
 
@@ -1054,4 +1056,5 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
