@@ -397,9 +397,17 @@ header {
 }
 
 .about-image img {
+  .about-image img {
+  width: auto;
   max-width: 100%;
+  height: auto;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
 }
 
 .about-text {
@@ -1046,3 +1054,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
